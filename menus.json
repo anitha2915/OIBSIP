@@ -1,0 +1,98 @@
+[
+  {
+    "_id": {
+      "$oid": "5eee651f739f8c674fd736ee"
+      },
+
+    "name": "Paneer Spice Supreme Pizza",
+    "size": "small",
+    "image": "paneer.png",
+    "description": "Pepperoni, sausage, mushrooms, green peppers, onions, and black olives.",
+    "price": 350
+  },
+
+  {
+    "_id": {
+            "$oid": "5eee6671a27a66807cf2bea2"
+        },
+    "name": "Margherita Pizza",
+    "size": "Small",
+    "image": "pz.png",
+    "description": "Fresh mozzarella, tomatoes, basil, and olive oil.",
+    "price": 250
+  },
+
+  {
+    "_id": {
+            "$oid": "5eee6692a27a66807cf2bea3"
+        },
+    "name": "Veg Extravaganza Pizza",
+    "size": "small",
+    "image": "Veg Extravaganza.png",
+    "description": "Grilled chicken, BBQ sauce, red onions, and cilantro.",
+    "price": 400
+  },
+
+  {
+    "_id": {
+      "$oid": "5eee66a5a27a66807cf2bea4"
+    },
+    "name": "Spiced Double Chicken Pizza",
+    "size": "medium",
+    "image": "Spiced Double Chicken.png",
+    "description": "Classic pepperoni pizza with marinara sauce and mozzarella cheese.",
+    "price": 559
+  },
+
+  {
+    "_id": {
+            "$oid": "5eee66c4a27a66807cf2bea5"
+        },
+    "name": "Cheese Overload Pizza",
+    "size": "Medium",
+    "image": "Cheese Overload.png",
+    "description": "Mozzarella cheese and marinara sauce.",
+    "price": 639
+  },
+  {
+    
+    "_id": {
+      "$oid": "5eee66cfa27a66807cf2bea6"
+  },
+    "name": "Chicken Dominator Pizza",
+    "size": "medium",
+    "image": "Chicken Dominator.png",
+    "description": "Mushrooms, green peppers, onions, black olives, and tomatoes.",
+    "price": 599
+  },
+  {
+    "_id": {
+            "$oid": "5eee66eea27a66807cf2bea7"
+        },
+    "name": "The 5 Chicken Feast Pizza",
+    "size": "small",
+    "image": "The 5 Chicken Feast Pizza.png",
+    "description": "Mozzarella cheese and marinara sauce.",
+    "price": 699
+  },
+  {
+    "_id": {
+      "$oid": "5eee6717a27a66807cf2bea8"
+  },
+    "name": "Indi Chicken Tikka Pizza",
+    "size": "small",
+    "image": "Indi Chicken Tikka.png",
+    "description": "Mozzarella cheese and marinara sauce.",
+    "price": 599
+  },
+  {
+    "_id": {
+            "$oid": "5eee6717a27a66807cf2bea9"
+        },
+    "name": "Chicken Pepperoni Pizza",
+    "size": "small",
+    "image": "Chicken Pepperoni.png",
+    "description": "Mozzarella cheese and marinara sauce.",
+    "price": 599
+  }
+]
