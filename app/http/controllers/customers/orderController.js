@@ -20,6 +20,9 @@ function orderController(){
          order.save().then(result =>{
             req.flash('success','Order placed successfully')
             delete req.session.cart
+            //Emit
+            const eventEmitter = req.app.get('eventEmitter');
+            eventEmitter.emit('orderUpdated', result);
             return res.redirect('/customer/orders')
 
          }).catch(err =>{
@@ -35,8 +38,20 @@ function orderController(){
             
          res.render('customers/orders',{orders:orders,moment:moment})
          console.log(orders)
-        }
-    }
+        },
+        async show(req, res) {
+        
+             const order = await Order.findById(req.params.id)
+             // Authorize user
+             if (req.user._id.toString() === order.customerId.toString()) {
+                  res.render('customers/singleOrder', { order })
+             } else {
+            
+             res.redirect('/customer/orders')
+         }
+     }
+   }
+    
 }
 
 module.exports= orderController
