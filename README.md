@@ -1,6 +1,7 @@
-**PIZZA DELIVERY APPLICATION USING REACT,MONGODB AND NODE.JS**
+         **PIZZA DELIVERY APPLICATION USING REACT,MONGODB AND NODE.JS**
 
-**FEATURES**
+**FEATURES**<br>
+
 *User Authentication*: Secure sign-up and login functionality.<br>
 *Menu Browsing*: Browse a variety of pizzas with detailed descriptions and prices.<br>
 *Real-Time Ordering*: Place orders and receive real-time updates on order status.<br>
