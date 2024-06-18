@@ -1,6 +1,6 @@
 <section class="cart py-16">
     <% if (session.cart && session.cart.items) { %>
-    <div class="order container mx-auto w-1/2">
+    <div class="order container mx-auto xl:w-1/2">
         <div class="flex items-center border-b border-gray-300">
            <img src="/img/cart-black.png" alt="" class="w-1/12">
            <h1 class="text-2xl font-bold ml-4">Order Summary</h1>
@@ -14,7 +14,7 @@
                     <h1><%=pizza.item.name%></h1>
                     <span><%=pizza.item.size%></span>
                 </div>
-                <span class="flex-1"><%=pizza.qty%></span>
+                <span class="flex-1"><%=pizza.qty%> Pcs</span>
                 <span class="font-bold text-lg">₹<%=pizza.item.price*pizza.qty%></span>
             </div>
             <% } %>

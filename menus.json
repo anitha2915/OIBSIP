@@ -94,5 +94,15 @@
     "image": "Chicken Pepperoni.png",
     "description": "Mozzarella cheese and marinara sauce.",
     "price": 599
+  },
+  {
+    "_id": {
+            "$oid": "5eee6717a27a66807cf2bea10"
+        },
+    "name": "blazing onion & paprika",
+    "size": "medium",
+    "image": "blazing onion & paprika.png",
+    "description": "Mozzarella cheese and marinara sauce.",
+    "price": 329
   }
 ]

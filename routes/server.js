@@ -13,8 +13,8 @@ const passport = require('passport');
 const Emitter = require('events')
 
 // Database connection
-const url = 'mongodb://localhost/pizza';
-mongoose.connect(url);
+
+mongoose.connect(process.env.MONGO_CONNECTION_URL);
 
 const connection = mongoose.connection;
 connection.once('open', () => {
@@ -28,8 +28,8 @@ app.use(flash());
 
 // Session store
 let mongoStore = MongoDbStore.create({
-mongoUrl: url,
-collectionName: 'sessions'
+    mongoUrl: process.env.MONGO_CONNECTION_URL,
+    collectionName: 'sessions'
 });
 //Even emitter
  const eventEmitter = new Emitter()
@@ -68,6 +68,9 @@ app.set('view engine', 'ejs');
 
 // Routes
 require('./web')(app);
+app.use((req,res)=>{
+    res.status(404).send('<h1>404,Page not found</h1>')
+})
 
 // Start Server
 const server = app.listen(PORT, () => {
@@ -95,3 +98,4 @@ eventEmitter.on('orderUpdated',(data)=>{
 eventEmitter.on('orderPlaced',()=>{
     io.to(adminRoom).emit('orderPlaced',data)
 })
+
