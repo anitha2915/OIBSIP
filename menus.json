@@ -10,18 +10,6 @@
     "description": "Pepperoni, sausage, mushrooms, green peppers, onions, and black olives.",
     "price": 350
   },
-
-  {
-    "_id": {
-            "$oid": "5eee6671a27a66807cf2bea2"
-        },
-    "name": "Margherita Pizza",
-    "size": "Small",
-    "image": "pz.png",
-    "description": "Fresh mozzarella, tomatoes, basil, and olive oil.",
-    "price": 250
-  },
-
   {
     "_id": {
             "$oid": "5eee6692a27a66807cf2bea3"
@@ -97,12 +85,42 @@
   },
   {
     "_id": {
-            "$oid": "5eee6717a27a66807cf2bea10"
+            "$oid": "66711227d66e854f15dd1c71"
         },
     "name": "blazing onion & paprika",
     "size": "medium",
     "image": "blazing onion & paprika.png",
     "description": "Mozzarella cheese and marinara sauce.",
     "price": 329
+  },
+  {
+    "_id":{
+      "$oid": "667113abd66e854f15dd1c72"
+    },
+    "name": "cheese n corn pizza",
+    "size": "medium",
+    "image": "cheese n corn pizza.png",
+    "description": "A delectable combination of sweet & juicy golden corn.",
+    "price": 400
+  },
+  {
+    "_id": {
+      "$oid": "66711562d66e854f15dd1c77"
+    },
+    "name": "Margherita Pizza",
+    "size": "Small",
+    "image": "margherita pizza.png",
+    "description": "Fresh mozzarella, tomatoes, basil, and olive oil.",
+    "price": 250
+  },
+  {
+    "_id": {
+      "$oid": "667116e4d66e854f15dd1c78"
+    },
+    "name": "Chicken Golden Delight",
+    "size": "medium",
+    "image": "Chicken Golden Delight.png",
+    "description": "Double pepper barbecue chicken, golden corn and extra cheese, true delight.",
+    "price": 559
   }
 ]
